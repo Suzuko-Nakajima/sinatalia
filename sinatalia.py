@@ -1,15 +1,14 @@
 import asyncio
 import os
 
-if os.path.exists("xfile.0"):
-    os.remove("xfile.0")
-    print('You had a file by the name and extension \"xfile.0\", it was automatically removed to create a new file.')
-
-else:
-    print('Could not locate a clone-like file...')
-
 def initialize():
     print('Initialzing program...')
+    if os.path.exists("xfile.0"):
+        os.remove("xfile.0")
+        print('You had a file by the name and extension \"xfile.0\", it was automatically removed to create a new file.')
+
+    else:
+        print('Could not locate a clone-like file...')
 
 def start():
     print('Setting up program...')
@@ -50,6 +49,16 @@ def start():
                         f = open("xfile.0", "r")
                         print(f.read())
 
+                        question_file = input("You have finished answering the questions, however, do you want to keep the file with the input information? (Y/n)\n")
+                        if question_file == 'Y':
+                            print("The file \"xfile.0\" is saved to your files.")
+                        else:
+                            if os.path.exists("xfile.0"):
+                                os.remove("xfile.0")
+                                print("\"xfile.0\" has been deleted from your files.")
+                            else:
+                                print("Error: File not found.")
+
         else:
             print("Error: Unknown")
     else:
@@ -62,7 +71,7 @@ def start():
 def fail():
     print('Key is invalid, please make sure you have permission to execute this file.')
 
-app = input("Please enter the access key to setup the program.\n")
+app = input("Please enter the access key to setup the program.\nNOTE: If you have a file that with name and extension \"xfile.0\", please transfer it to another directory to make room for a new incoming file.\n")
 if app == 'Launch':
     start()
 else:
