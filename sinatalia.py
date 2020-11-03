@@ -1,8 +1,8 @@
 import asyncio
 import os
 
-if os.path.exists("file.0"):
-    os.remove("file.0")
+if os.path.exists("xfile.0"):
+    os.remove("xfile.0")
     print('You had a file by the name and extension \"xfile.0\", it was automatically removed to create a new file.')
 
 else:
