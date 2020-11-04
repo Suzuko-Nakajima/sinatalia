@@ -5,7 +5,7 @@ import json
 import datetime
 
 d = datetime.datetime.now()
-print(d)
+print(d.strftime("%A, %B %d, %Y"))
 
 def initialize():
     print('Initialzing program...')
