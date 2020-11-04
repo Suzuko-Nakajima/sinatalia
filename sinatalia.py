@@ -14,45 +14,56 @@ def start():
 
         file_name = input("Enter the file name you want, add an extension as well (\".txt\" is recommended).\n")
         if file_name == file_name:
-            f = open(file_name, "x")
-            print(f"{file_name} has been created.")
-            
-            question_age = input("Age:\n")
-            if question_age == question_age:
-                f = open(file_name, "a")
-                f.write(f"\nName: {name}\n\nAge: " + question_age + "\n")
-                f.close()
+            if os.path.exists(file_name):
+                print(f"You already have a file by the name and extension: \"{file_name}\".")
+                q_delete_file = input("Do you want to delete this file? (Y/n)\n")
+                if q_delete_file == 'Y':
+                    os.remove(file_name)
+                    print(f"{file_name} has been deleted, relaunch the program and rechoose your file name.")
+                
+                else:
+                    print(f"\"{file_name}\" has not been tampered with, just relaunch the program and choose a different file name.")
 
-                question_dob = input("Date of birth:\n")
-                if question_dob == question_dob:
+            else:
+                f = open(file_name, "x")
+                print(f"{file_name} has been created.")
+            
+                question_age = input("Age:\n")
+                if question_age == question_age:
                     f = open(file_name, "a")
-                    f.write("\nDate of birth: " + question_dob + "\n")
+                    f.write(f"\nName: {name}\n\nAge: " + question_age + "\n")
                     f.close()
 
-                    question_gender = input("Gender:\n")
-                    if question_gender == question_gender:
+                    question_dob = input("Date of birth:\n")
+                    if question_dob == question_dob:
                         f = open(file_name, "a")
-                        f.write("\nGender: " + question_gender + "\n")
+                        f.write("\nDate of birth: " + question_dob + "\n")
                         f.close()
 
-                        question_bio = input("Bio:\n")
-                        if question_bio == question_bio:
+                        question_gender = input("Gender:\n")
+                        if question_gender == question_gender:
                             f = open(file_name, "a")
-                            f.write("\nBio: " + question_bio + "\n")
+                            f.write("\nGender: " + question_gender + "\n")
                             f.close()
 
-                            f = open(file_name, "r")
-                            print(f.read())
+                            question_bio = input("Bio:\n")
+                            if question_bio == question_bio:
+                                f = open(file_name, "a")
+                                f.write("\nBio: " + question_bio + "\n")
+                                f.close()
 
-                            question_file = input("You have finished answering the questions, however, do you want to keep the file with the input information? (Y/n)\n")
-                            if question_file == 'Y':
-                                print(f"The file \"{file_name}\" is saved to your files.")
-                            else:
-                                if os.path.exists(file_name):
-                                    os.remove(file_name)
-                                    print(f"\"{file_name}\" has been deleted from your files.")
+                                f = open(file_name, "r")
+                                print(f.read())
+
+                                question_file = input("You have finished answering the questions, however, do you want to keep the file with the input information? (Y/n)\n")
+                                if question_file == 'Y':
+                                    print(f"The file \"{file_name}\" is saved to your files.")
                                 else:
-                                    print("Error: File not found.")
+                                    if os.path.exists(file_name):
+                                        os.remove(file_name)
+                                        print(f"\"{file_name}\" has been deleted from your files.")
+                                    else:
+                                        print("Error: File not found.")
 
         else:
             print("Error: Something went wrong, possible issues:\nDuplicate file\nUnreadable code\n")
