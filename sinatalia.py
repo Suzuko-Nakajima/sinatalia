@@ -1,5 +1,7 @@
 import asyncio
 import os
+import random
+import json
 
 def initialize():
     print('Initialzing program...')
