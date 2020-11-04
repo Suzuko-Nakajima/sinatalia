@@ -9,3 +9,6 @@
 
 ## Update v2020.11.4.1
 - Update 3
+
+## Update v2020.11.4.2
+- Update 4
