@@ -68,11 +68,7 @@ def start():
         else:
             print("Error: Something went wrong, possible issues:\nDuplicate file\nUnreadable code\n")
     else:
-        if os.path.exists(file_name):
-            os.remove(file_name)
-            print("NOTICE: Stopped due to rejection.")
-        else:
-            print("This file does not exist...no files deleted.")
+        print("You declined authorization to create a file, therefore, the program has stopped.\nFeel free to relaunch the program.")
 
 def fail():
     print('Key is invalid, please make sure you have permission to execute this file.')
