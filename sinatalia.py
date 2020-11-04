@@ -2,6 +2,10 @@ import asyncio
 import os
 import random
 import json
+import datetime
+
+d = datetime.datetime.now()
+print(d)
 
 def initialize():
     print('Initialzing program...')

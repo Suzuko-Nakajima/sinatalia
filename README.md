@@ -24,3 +24,5 @@
 
 ## Update v2020.11.5.1
 - Update 8
+
+## Update v2020.11.5.2

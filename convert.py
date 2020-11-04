@@ -7,6 +7,9 @@ import random
 name = input("Enter your name:\n")
 age = input("Enter your age:\n")
 dob = input("Enter your date of birth:\n")
+gender = input("Enter your gender:\n")
+
+
 file = input("Enter the file name you want to create.\n")
 if os.path.exists(file):
     print("This file already exists.")
@@ -24,12 +27,13 @@ else:
 x = {
     "Name": f"{name}",
     "Age:": f"{age}",
-    "Date of birth:": f"{dob}"
+    "Date of birth:": f"{dob}",
+    "Gender:": f"{gender}"
 }
 
 y = json.dumps(x)
 print(y)
 
-f = open("javascript.json", "w")
+f = open(file + ".json", "w")
 f.write(y)
 f.close()
