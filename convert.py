@@ -3,6 +3,10 @@ import json
 import sys
 import os
 import random
+import datetime
+
+d = datetime.datetime.now()
+print(d.strftime("%A, %B %d, %Y"))
 
 name = input("Enter your name:\n")
 age = input("Enter your age:\n")

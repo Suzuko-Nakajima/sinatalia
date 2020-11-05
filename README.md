@@ -33,3 +33,7 @@
 
 ## Update v2020.11.6.1
 - Update 11
+
+
+## Update v2020.11.6.2
+- Update 12
