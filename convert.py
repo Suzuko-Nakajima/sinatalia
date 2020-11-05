@@ -4,9 +4,20 @@ import sys
 import os
 import random
 import datetime
+from numpy import random
+
+quote = random.choice([
+    "A lie can only travel so far before the truth unfolds.",
+    "You can run from your problems, but you can never escape from them.",
+    "Death is like any natural disaster, you can't prevent it from happening.",
+    "The truth will always hurt much less compared to a lie.",
+    "Time truly isn't real, there is no day or night...we are all living the very same \"day\"."
+])
 
 d = datetime.datetime.now()
 print(d.strftime("%A, %B %d, %Y | %H:%M:%S - %Z"))
+
+print(quote)
 
 name = input("Enter your name:\n")
 age = input("Enter your age:\n")
