@@ -8,6 +8,7 @@ name = input("Enter your name:\n")
 age = input("Enter your age:\n")
 dob = input("Enter your date of birth:\n")
 gender = input("Enter your gender:\n")
+bio = input("Bio:\n")
 
 
 file = input("Enter the file name you want to create.\n")
@@ -28,7 +29,8 @@ x = {
     "Name": f"{name}",
     "Age:": f"{age}",
     "Date of birth:": f"{dob}",
-    "Gender:": f"{gender}"
+    "Gender:": f"{gender}",
+    "Bio:": f"{bio}"
 }
 
 y = json.dumps(x)
