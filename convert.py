@@ -6,7 +6,7 @@ import random
 import datetime
 
 d = datetime.datetime.now()
-print(d.strftime("%A, %B %d, %Y"))
+print(d.strftime("%A, %B %d, %Y | %H:%M:%S - %Z"))
 
 name = input("Enter your name:\n")
 age = input("Enter your age:\n")
