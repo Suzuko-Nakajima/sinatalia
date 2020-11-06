@@ -11,7 +11,8 @@ quote = random.choice([
     "You can run from your problems, but you can never escape from them.",
     "Death is like any natural disaster, you can't prevent it from happening.",
     "The truth will always hurt much less compared to a lie.",
-    "Time truly isn't real, there is no day or night...we are all living the very same \"day\"."
+    "Time truly isn't real, there is no day or night...we are all living the very same \"day\".",
+    "Choose a name that best suits you, does not have to be your real name."
 ])
 
 d = datetime.datetime.now()
