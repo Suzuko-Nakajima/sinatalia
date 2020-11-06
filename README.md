@@ -48,3 +48,6 @@
 
 ## Update v2020.11.7.1
 - Update 16
+
+## Update v2020.11.7.2
+- Update 11

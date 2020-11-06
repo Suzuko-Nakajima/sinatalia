@@ -22,7 +22,24 @@ if os.path.exists("user_profile.json"):
         email = input("Email:\n")
         phone = input("Phone number:\n")
         confirm = input("Execute changes? (This will overwrite your previous changes.) (Y/n)\n")
+        if confirm == 'Y':
+            update_x = {
+                "Username:": f"{username}",
+                "Age:": f"{age}",
+                "Date of birth:": f"{dob}",
+                "Gender:": f"{gender}",
+                "Bio:": f"{bio}",
+                "Email:": f"{email}",
+                "Phone number:": f"{phone}"
+                }
 
+            y = json.dumps(update_x, indent=4, sort_keys=True)
+
+            with open("user_profile.json", "w+") as f:
+                f.write(y)
+                f.close()
+        else:
+            print("No changes were made to \"user_profile.json\".")
     else:
         print("Changes haven't been executed, therefore, no change has occured.")
         
@@ -39,9 +56,7 @@ else:
     phone = input("Phone number:\n")
     confirm = input("Execute information? (Y/n)\n")
 
-
-
-x = {
+    x = {
     "Username:": f"{username}",
     "Age:": f"{age}",
     "Date of birth:": f"{dob}",
@@ -49,14 +64,14 @@ x = {
     "Bio:": f"{bio}",
     "Email:": f"{email}",
     "Phone number:": f"{phone}"
-}
+    }
 
-y = json.dumps(x, indent=4, sort_keys=True)
+    y = json.dumps(x, indent=4, sort_keys=True)
 
-if confirm == 'Y':
-            with open("user_profile.json", "w") as f:
-                f.write(y)
-                f.close()
-                print("\"user_profile.json\" has been updated.")
-else:
+    if confirm == 'Y':
+        with open("user_profile.json", "w") as f:
+            f.write(y)
+            f.close()
+            print("\"user_profile.json\" has been updated.")
+    else:
         print("No changes have been made to \"user_profile.json\".")
