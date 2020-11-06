@@ -9,11 +9,10 @@ from numpy import random
 
 if os.path.exists("reports.json"):
     with open("reports.json", encoding="utf-8") as f:
-        report = json.load(f)
         f.close()
 
         reason = input("Input a reason:\n")
-
+        print("Will not implement additional information to \"reports.json\".")
 
 else:
     with open("reports.json", "x") as f:
