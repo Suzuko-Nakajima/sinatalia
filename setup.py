@@ -25,6 +25,8 @@ if os.path.exists("user_profile.json"):
 
     else:
         print("Changes haven't been executed, therefore, no change has occured.")
+        
+
 else:
     f = open("user_profile.json", "x")
     f.close()
