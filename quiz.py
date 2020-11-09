@@ -140,13 +140,13 @@ if start == 'Start':
         "Question 6:": f"Your answer: {answer6} | Correct answer: True",
         "Question 7:": f"Your answer: {answer7} | Correct answer: Ichihara",
         "Question 8:": f"Your answer: {answer8} | Correct answer: Kyoko Kirigiri",
-        "Question 9:": f"Your answer: {answer9} | Correct answer: Sinatalia",
+        "Question 9:": f"Your answer: {answer9} | Correct answer: Japanese",
         "Question 10:": f"Your answer: {answer10} | Correct answer: Sin"
     }
 
     submit_grade = json.dumps(grade, indent=4, sort_keys=False)
 
-    with open("quiz_grade.json", "w+") as f:
+    with open(name + "\'s_grade.json", "w+") as f:
         f.write(submit_grade)
         f.close()
 else:
