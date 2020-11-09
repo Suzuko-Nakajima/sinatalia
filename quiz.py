@@ -132,16 +132,16 @@ if start == 'Start':
     
     grade = {
         "Name:": f"{name}",
-        "Question 1:": f"Your answer: {answer1} | Correct answer: Suzuko",
-        "Question 2:": f"Your answer: {answer2} | Correct answer: HTML",
-        "Question 3:": f"Your answer: {answer3} | Correct answer: Three",
-        "Question 4:": f"Your answer: {answer4} | Correct answer: True",
-        "Question 5:": f"Your answer: {answer5} | Correct answer: Ongoing",
-        "Question 6:": f"Your answer: {answer6} | Correct answer: True",
-        "Question 7:": f"Your answer: {answer7} | Correct answer: Ichihara",
-        "Question 8:": f"Your answer: {answer8} | Correct answer: Kyoko Kirigiri",
-        "Question 9:": f"Your answer: {answer9} | Correct answer: Japanese",
-        "Question 10:": f"Your answer: {answer10} | Correct answer: Sin"
+        "Question 1:": f"Your answer: {answer1}",
+        "Question 2:": f"Your answer: {answer2}",
+        "Question 3:": f"Your answer: {answer3}",
+        "Question 4:": f"Your answer: {answer4}",
+        "Question 5:": f"Your answer: {answer5}",
+        "Question 6:": f"Your answer: {answer6}",
+        "Question 7:": f"Your answer: {answer7}",
+        "Question 8:": f"Your answer: {answer8}",
+        "Question 9:": f"Your answer: {answer9}",
+        "Question 10:": f"Your answer: {answer10}"
     }
 
     submit_grade = json.dumps(grade, indent=4, sort_keys=False)
