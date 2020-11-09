@@ -66,3 +66,6 @@
 
 ## Update v2020.11.10.1
 - Update 20
+
+## Update v2020.11.10.2
+- Update 21

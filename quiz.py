@@ -54,6 +54,7 @@ def ac10():
 name = input("Please enter your name:\n")
 if name == name:
     print(f"{name} logged in...check.")
+    print(msg)
 
 
 
@@ -62,73 +63,33 @@ if start == 'Start':
     print("What is Nakajima\'s first name?\n")
     ac1()
     answer1 = input()
-    if answer1 == 'Suzuko':
-        print(msg)
-    else:
-        print(msg)
     print("Before switching over to Python, what coding/programming language did Nakajima use?\n")
     ac2()
     answer2 = input()
-    if answer2 == 'HTML':
-        print(msg)
-    else:
-        print(msg)
     print("How long was the \"Inactivity\" gap from when Shiro Saikosaki was first created, to when she was finally hosted online?\n")
     ac3()
     answer3 = input()
-    if answer3 == 'Three':
-        print(msg)
-    else:
-        print(msg)
     print("Nakajima has modified a game. True or False?\n")
     ac4()
     answer4 = input()
-    if answer4 == 'True':
-        print(msg)
-    else:
-        print(msg)
     print("What kind of project is Shiro Saikosaki (Discord bot)?\n")
     ac5()
     answer5 = input()
-    if answer5 == 'Ongoing':
-        print(msg)
-    else:
-        print(msg)
     print("Nakajima prefers a last name basis. True or False?\n")
     ac6()
     answer6 = input()
-    if answer6 == 'True':
-        print(msg)
-    else:
-        print(msg)
     print("What is Nakajima\'s middle name?\n")
     ac7()
     answer7 = input()
-    if answer7 == 'Ichihara':
-        print(msg)
-    else:
-        print(msg)
     print("Who is Nakajima's favorite anime character?\n")
     ac8()
     answer8 = input()
-    if answer8 == "Kyoko Kirigiri":
-        print(msg)
-    else:
-        print(msg)
     print("What kind of name does Nakajima have?\n")
     ac9()
     answer9 = input()
-    if answer9 == 'Sinatalia':
-        print(msg)
-    else:
-        print(msg)
     print("What word (English) does Nakajima's full name spell?\n")
     ac10()
     answer10 = input()
-    if answer10 == 'Sin':
-        print(msg)
-    else:
-        print(msg)
     
     grade = {
         "Name:": f"{name}",
