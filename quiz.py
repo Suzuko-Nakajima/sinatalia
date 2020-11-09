@@ -144,7 +144,7 @@ if start == 'Start':
         "Question 10:": f"Your answer: {answer10} | Correct answer: Sin"
     }
 
-    submit_grade = json.dumps(grade, indent=4, sort_keys=True)
+    submit_grade = json.dumps(grade, indent=4, sort_keys=False)
 
     with open("quiz_grade.json", "w+") as f:
         f.write(submit_grade)
