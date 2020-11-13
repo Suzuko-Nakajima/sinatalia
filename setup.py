@@ -4,8 +4,10 @@ import sys
 import os
 import random
 import datetime
+import time
 from numpy import random
 
+time.sleep(3)
 
 dt = datetime.datetime.now()
 print(dt.strftime("%A, %B %d, %Y | %H:%M:%S - %Z"))

@@ -5,6 +5,7 @@ import sys
 import os
 import random
 import datetime
+import time
 from numpy import random
 
 msg = random.choice([
@@ -51,15 +52,20 @@ def ac9():
 def ac10():
     print("1. Sin\n2. Nis\n3. Sen\n4. Nes")
 
+    print(msg)
+    time.sleep(2)
+
 name = input("Please enter your name:\n")
 if name == name:
+    time.sleep(2)
     print(f"{name} logged in...check.")
-    print(msg)
+    time.sleep(1)
 
 
 
 start = input("Type \'Start\' to begin the quiz.\nWhen you begin, all the answers must be written in words, no numerical or special characters shall be used or else answers will be wrong.\n")
 if start == 'Start':
+    time.sleep(2)
     print("What is Nakajima\'s first name?\n")
     ac1()
     answer1 = input()
