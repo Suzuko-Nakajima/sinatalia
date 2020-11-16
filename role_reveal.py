@@ -9,39 +9,23 @@ import time
 from numpy import random
 
 integer = random.choice([
-    "1",
-    "2",
-    "3",
-    "4",
-    "5"
+    "16",
+    "22",
+    "43",
+    "64",
+    "58"
 ])
 
 
 print('Initializing program...')
-time.sleep(2)
+time.sleep(1.5)
 username = input("Enter a username:\n")
 time.sleep(1)
-password = input("Enter a password:\n")
+print('Checking username...\n')
 time.sleep(1)
-
-print('Checking for \"creditials.json\"...')
-time.sleep(1)
-if os.path.exists("creditials.json"):
-    print('File \"creditials.json\" has been located in this directory.')
+print(f'Logging username {username}...check.')
+time.sleep(1.5)
+if integer == '16':
+    print('You are 16th.')
 else:
-    print('File not found...')
-    time.sleep(1)
-    with open("creditials.json", "x") as f:
-        f.close()
-        print('File \"creditials.json\" has been created.')
-
-creditials = {
-    "username": f"{username}",
-    "password": f"{password}"
-}
-
-y = json.dumps(creditials, indent=4)
-
-with open("creditials.json", "w+") as f:
-    f.write(y)
-    f.close()
+    print('You are an ordinary.')

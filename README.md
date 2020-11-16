@@ -75,3 +75,6 @@
 
 ## Update v2020.11.17.1
 - Update 23
+
+## Update v2020.11.17.2
+- Update 24
